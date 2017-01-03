@@ -1,1 +1,1 @@
-https://neoinsight.github.io/ux/form/index-en.html
+https://neoinsight.github.io/ux/form-templates/index-en.html
