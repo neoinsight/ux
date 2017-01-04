@@ -117,7 +117,21 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 	<p>This form is not connected to a server - the data aren't really being collected. It's just for test purposes.</p>
 	<div class="wb-frmvld">
 		<form action="./exform6-en.html" method="get" id="validation-example" novalidate>
-			<fieldset>
+			<fieldset class="form-group">
+				<label for="file1"><span class="field-name">Attach any file:</span></label>
+				<p id="attach-desc">We want to understand how people attach files to webforms. Attach then remove any photo or file.</p>
+				<input class="file1" name="file1" type="file" ariadescribedby="attach-desc" />
+			</fieldset>
+			<!--
+			<fieldset class="form-group">
+				<label for="frmCityS" ><span class="field-name">City</span></label>
+				<input class="form-control" required id="frmCityS" name="ship-city" placeholder="Ottawa" autocomplete="shipping locality"/>
+			</fieldset>
+			<fieldset class="form-group">
+				<label for="frmStateS" ><span class="field-name">Province</span></label>
+				<input class="form-control" required id="frmStateS" name="ship-state" placeholder="Ontario" autocomplete="shipping region"/>
+			</fieldset>
+			<!--<fieldset>
 				<legend ><span class="field-name">Radio button question</span> </legend>
 				<p><strong>What is your citizenship status?</strong></p> 
 				<p>A permanent resident is someone who has been given permanent resident status by immigrating to Canada, but is not a Canadian citizen.</p>
@@ -140,7 +154,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 						</div>
 					</section>
 					-->
-				<div class="radio">
+				<!--<div class="radio">
 					<label for="status1"><input type="radio" name="status" value="1" id="status1"/>&#160;&#160;Canadian citizen</label>
 				</div>
 				<div class="radio">
@@ -169,6 +183,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 					<label for="technology4"><input type="checkbox" name="tablet" value="4" id="technology4" />&#160;&#160;tablet</label>
 				</div>
 			</fieldset>
+--> 
 			<input type="button" onclick="submitForm('./exform2-en.html')" value="Previous" class="cancel btn btn-default" >
 			<input type="submit" value="Next" class="btn btn-primary">
 		</form>
