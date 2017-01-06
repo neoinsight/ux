@@ -116,14 +116,13 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 </nav>
 </header>
 <main role="main" property="mainContentOfPage" class="container">
-	<h1 id="wb-cont" property="name">Example Application Form 4</h1>
+	<h1 id="wb-cont" property="name">Selecting from a long list</h1>
 	<p>This form is not connected to a server - the data aren't really being collected. It's just for test purposes.</p>
 	<div class="wb-frmvld">
 		<form action="./done-en.html" method="get" id="validation-example" novalidate>
 			<fieldset class="form-group">
-				<legend>Select a Country</legend>
+				<legend>DO: use a dropdown menu</legend>
 				<div class="form-group">
-				<label for="country1" ><span class="field-name">Drop-down menu to select a country</span></label>
 				<select class="form-control" id="country1" name="country1">
 					<option label="Select a country"></option>
 					<option value="Afghanistan">Afghanistan</option>
@@ -378,7 +377,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 				</select>
 			</div>
 				<div class="form-group">
-				<label for="country2" ><span class="field-name">Datalist Polyfill tool</span></label>
+					<legend>DON'T: use a datalist polyfill tool</legend>
 					<p id="country-desc">Slower than dropdown menu and can cause errors</p>
 				<input class="form-control" type="text" id="country2" name="country2" list="suggestions" placeholder="Start typing..." ariadescribedby="country-desc" />
 				<datalist id="suggestions">
