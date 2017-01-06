@@ -193,6 +193,18 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 	<input class="form-control" type="date" id="dob" name="dob" min="1910-01-01" max="2016-12-31">
 </div>
 			</fieldset> 
+			<fieldset>
+				<legend>Date ranges - use two WET date pickers</legend>
+<p>For date ranges, there is currently no code for a single date range picker. In the meantime, use two WET date pickers.</p>
+<div class="form-group">
+	<label for="startdate">Start Date<span class="datepicker-format"> (<abbr title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span></label>
+	<input class="form-control" type="date" id="startdate" name="startdate" min="2015-01-01" max="2016-12-31">
+</div>
+<div class="form-group">
+	<label for="enddate">End Date<span class="datepicker-format"> (<abbr title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span></label>
+	<input class="form-control" type="date" id="enddate" name="enddate" min="2015-01-01" max="2016-12-31">
+</div>
+			</fieldset>
 			
 			<input type="button" onclick="submitForm('./exform2-en.html')" value="Previous" class="cancel btn btn-default" >
 			<input type="submit" value="Next" class="btn btn-primary">
