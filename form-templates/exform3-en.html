@@ -185,13 +185,12 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 				</div>
 			</fieldset>
 			<fieldset> 
-				<legend >Datepicker</legend>
-				<label for="dob3yy"><span class="field-name">Insert datepicker here</span></label> 
-				<div class="form-inline dob-picker">
-					<div class="form-group">
-						<input class="form-control" id="dob3yy" name="dob3yy" type="text" size=4 pattern="[0-9]{4}" aria-describedby="dob-desc">
-					</div>
-				</div>
+			<label><span class="field-name">DON'T use a date picker for dates in the past</span></label>
+                        <p>What is your date of birth?</p>
+                        <div class="form-group">
+	<label for="startdate">Start Date<span class="datepicker-format"> (<abbr title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span></label>
+	<input class="form-control" type="date" id="dob" name="dob" min="1910-01-01" max="2016-12-31">
+</div>
 			</fieldset> 
 			
 			<input type="button" onclick="submitForm('./exform2-en.html')" value="Previous" class="cancel btn btn-default" >
