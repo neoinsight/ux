@@ -124,7 +124,29 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 				<legend>Phone numbers and sums of money</legend>
 				<div class="form-group">
 					<label for="tel1"><span class="field-name">Daytime Contact Number</span></label>
-					<p id="tel1-desc">No placeholder or label</p>
+					<p><a href="#right-panel-version" aria-controls="right-panel-version" class="overlay-lnk" role="button">Recommendation: don't bother with a placeholder or label</a></p>
+					<section id="right-panel-version" class="wb-overlay modal-content overlay-def wb-panel-r" style="max-width:60%;">	
+						<header class="modal-header">
+							<h2 class="modal-title">Don't ask for formatting for phone numbers</h2>
+						</header>
+						<div class="modal-body">
+							 <dl class="mrgn-bttm-lg">
+							 	<dt class="h3 mrgn-tp-md">Placeholders and labels do not guarantee that users will follow the correct format</dt>
+							 	<dd><ul id="sm list-unstyled">
+									<li>In January 2014, 13 desktop users saw a field that had a label above the field (999-999-9999). Only 7 used hyphens</li>
+									<li>In March 2014, 10 desktop users saw a field that had a placeholder in it. Only 4 used hyphens</li>
+									<li>Later in March, 10 desktop users tried a field with a placeholder and label. 8 used hyphens but mobile participants still did not follow the suggested format</li>
+									</ul></dd>
+								 <dt class="h3 mrgn-tp-md">Use code that will accept any formatting or spacing instead</dt>
+								 <dd><ul id="sm list-unstyled">
+									 <li>In February 2016, 18 participants entered a phone number into a field without a placeholder or label. 3 used hyphens, similar to the number of participants that used hyphens in previous rounds. All participants entered the phone number without error messages.</li>
+									 <li>In April 2016, 11 blind participants entered a phone number into a field with neither a label or placeholder. 9 were able to complete it successfully without error messages</li></ul></dd>
+							</dl>
+						</div>
+						<div class="modal-body">
+        						<button class="btn btn-primary" type="button" onClick="$( '.wb-overlay' ).trigger( 'close.wb-overlay' );">Close</button>
+						</div>
+				</section>
 					<input class="form-control" id="tel1" name="tel1" type="tel" data-rule-phoneus="true" aria-describedby="tel1-desc">
 				</div>
 				<div class="form-group">
