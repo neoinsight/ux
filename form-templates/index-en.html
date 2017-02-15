@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-<title>Working examples - Canada.ca</title>
+<title>Demonstration Form 1</title>
 <meta content="width=device-width,initial-scale=1" name="viewport">
 <!-- Meta data -->
 <meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
@@ -117,7 +117,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 </header>
 <main role="main" property="mainContentOfPage" class="container">
 	<h1 id="wb-cont" property="name">Demonstration WET Web Form</h1>
-	<p>This form is not connected to a server - the data aren't really being collected.The examples are based on learning from research sessions with over 100 Canadians. Links and more details about the form examples are provided in this set of form pages. 
+	<p>This form is not connected to a server - the data aren't really being collected.The examples are based on learning from research sessions with over 100 Canadians who filled out the form on computers, iPads, smart phones and screen-readers. 
 	</p>
 	<div class="wb-frmvld">
 		<form action="./exform2-en.html" method="get" id="validation-example" novalidate>
@@ -142,14 +142,11 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 				</div>
 				<div class="form-group">
 					<label for="bversion"><span class="field-name">Level 3: A question where people might need to go look up the answer</span></label>
-					<p><a href="#right-panel-version" aria-controls="right-panel-version" class="overlay-lnk" role="button">Use an overlay to tell them where to find the answer</a></p>
+					<p><a href="#right-panel-version" aria-controls="right-panel-version" class="overlay-lnk" role="button">How to use an overlay for help in a form</a></p>
 					<section id="right-panel-version" class="wb-overlay modal-content overlay-def wb-panel-r" style="max-width:60%;">	
 						<header class="modal-header">
-							<h2 class="modal-title">Describe how they can find the answer</h2>
+							<h2 class="modal-title">A helpful title</h2>
 						</header>
-						<div class="form-group">
-							<label for="btype"><span class="field-name">Example 1</span></label>
-						</div>
 						<div class="modal-body">
 							 <dl class="mrgn-bttm-lg">
 							 	<dd> Use a 60% width overlay with a Close button for help on a form. In our research, we had people tell us which version of browser they were using and this overlay told them how to find the version number in each browser. Even on a phone, it helped people to see the form and the overlay at the same time.
@@ -166,10 +163,11 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 				</div>
 				<div class="form-group">
 					<label for="detail"><span class="field-name">Level 3: Details-summary for help was rejected in favour of Overlay</span></label>
-					<p><a href="#right-panel-version" aria-controls="right-panel-version" class="overlay-lnk" role="button">Use an overlay to tell them where to find the answer</a></p>
 					<details>	
 							<summary>Why you should use the overlay instead ...</summary>
-							<p> Over the course of four studies, the Details Summary polyfill was modified to make it look more actionable. 4 of 10 people missed seeing/using the original version. The final version had a box around it, and on hover, the summary looks like a link. This approach was more successful, all 15 of 15 participants saw & used that version. The problem with this component in forms is that it pushes the field down below the expanded details. People in the study had trouble finding the input field once the details were open.  The overlay for help solves that problem and other than in mobile, allows people to see both the form itself and the help, so that they connect the concepts. Details summary is also not as easily noticed and used by people using screenreaders. </dd>
+							<p> Over the course of four studies, the Details/Summary was modified to make it look more actionable. 4 of 10 people missed seeing/using the original version. The final version had a box around it, and on hover, the summary looks like a link. This approach was more successful, all 15 of 15 participants saw & used that version. </p>
+							<p>A problem still remained. People in the study had trouble finding the input field once the details were open because the field was pushed down the page, far from the label.  The overlay for help solves that problem and other than in mobile, allows people to see both the form itself and the help, so that they connect the concepts. </p>
+							<p>Details/Summary is also not as easily noticed and used by participants using the form via screen-readers. The overlay is coded as a button, this made it more noticeable to them.
 							</p>
 					</details>
 					<input class="form-control" id="detail" name="detail" type="text" aria-describedby="detail">
