@@ -116,15 +116,17 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 </nav>
 </header>
 <main role="main" property="mainContentOfPage" class="container">
-	<h1 id="wb-cont" property="name">Example Web Form</h1>
-	<p>This form is not connected to a server - the data aren't really being collected. It's just for test purposes.</p>
+	<h1 id="wb-cont" property="name">Demonstration WET Web Form</h1>
+	<p>This form is not connected to a server - the data aren't really being collected.The examples are based on learning from research sessions with over 100 Canadians. 
+	</p>
 	<div class="wb-frmvld">
 		<form action="./exform2-en.html" method="get" id="validation-example" novalidate>
 			<fieldset>
 				<legend>Providing Help with Form Questions</legend>
+				<p>Strive for clear simple questions, but sometimes a little help is needed. We tried these two methods in many studies and they worked well. At first we used a Details Summary for the Level 3 help, but eventually we found the Overlay was more successful - more people used it than the Details Summary.</p>
 				<div class="form-group">
-					<label for="browser1" class="required"><span class="field-name">Level 1: A simple question</span><strong class="required">(required)</strong></label>
-					<select class="form-control" id="browser1" name="browser1" required="required">
+					<label for="browser1" class="required"><span class="field-name">Level 1: A simple question</span>/label>
+					<select class="form-control" id="browser1" name="browser1">
 						<option label="Select an answer"></option>
 						<option value="Chrome">simple answer 1</option>
 						<option value="IE">simple answer 2</option>
@@ -134,23 +136,23 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 					</select>
 				</div>
 				<div class="form-group">
-					<label for="bversion"><span class="field-name">Level 2: Complicated question</span></label>
-					<p>For complicated questions, include short instructions here to help users.</p> 
+					<label for="bversion"><span class="field-name">Level 2: Some people might need more detail or an example.</span></label>
+					<p>Include a short example or a special case in text below the label.</p> 
 					<input class="form-control" id="bversion" name="bversion" type="text" aria-describedby="bversion">
 				</div>
 				<div class="form-group">
-					<label for="bversion"><span class="field-name">Level 3: Very complicated question</span></label>
-					<p><a href="#right-panel-version" aria-controls="right-panel-version" class="overlay-lnk" role="button">How to answer very complicated question</a></p>
+					<label for="bversion"><span class="field-name">Level 3: A question where people might need to go look up the answer</span></label>
+					<p><a href="#right-panel-version" aria-controls="right-panel-version" class="overlay-lnk" role="button">Use an overlay to tell them where to find the answer</a></p>
 					<section id="right-panel-version" class="wb-overlay modal-content overlay-def wb-panel-r" style="max-width:60%;">	
 						<header class="modal-header">
-							<h2 class="modal-title">Help for answering complicated question</h2>
+							<h2 class="modal-title">Describe how they can find the answer</h2>
 						</header>
 						<div class="form-group">
-							<label for="btype"><span class="field-name">Instructions/Guide</span></label>
+							<label for="btype"><span class="field-name">Example 1</span></label>
 						</div>
 						<div class="modal-body">
 							 <dl class="mrgn-bttm-lg">
-							 	<dd>For long questions with complicated steps, use an overlay to help participants answer the question correctly.</dd>
+							 	<dd> Use a 60% width overlay with a Close button to help people find the answer. In our research, we had people tell us which version of browser they were using and this overlay told them how to find the version number in each browser.</dd>
 							</dl>
 						</div>
 						<div class="modal-body">
@@ -165,7 +167,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 	</div>
 	<dl id="wb-dtmd">
 		<dt>Date modified: </dt>
-		<dd><time property="dateModified">2016-07-06</time></dd>
+		<dd><time property="dateModified">2017-Feb-15</time></dd>
 	</dl>
 </main>
 <footer role="contentinfo" id="wb-info">
