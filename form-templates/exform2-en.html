@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-<title>Working examples - Canada.ca</title>
+<title>Form2</title>
 <meta content="width=device-width,initial-scale=1" name="viewport">
 <!-- Meta data -->
 <meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
@@ -158,11 +158,6 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 				<div class="radio">
 					<label for="status4"><input type="radio" name="status" value="4" id="status4" />&#160;&#160;Other</label>
 				</div>
-					<details>
-				<summary>Question help level: label with text</summary>
-				<h4>Note</h4>
-				<p id="tel1-desc">This is an example of a question with a legend and a text hint beneath it. This is more help than just a label but less help than adding an overlay.</p>		
-	                        </details>
 				</div> 
 			</fieldset>
 			<fieldset>
@@ -184,108 +179,19 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 				<summary>Place checkboxes vertically and close together - easier to scan</summary>
 				<h4>Recommendation</h4>
 				<ul id="sm list-unstyled">
-									<li>Mockplus recommends placing checkboxes underneath each other, rather than beside each other, for better scannability.</li>
-									<li>If there are fewer than 6 options, show each one. Don't use a dropdown selector.</li>
-					                                <li><a href="https://www.mockplus.com/blog/post/design-better-formscommon-mistakes-designers-make-and-how-to-fix-them">Read the article</a></li>
-									</ul>		
+						<li>Mockplus recommends placing checkboxes underneath each other, rather than beside each other, for better scannability.</li>
+						<li>If there are fewer than 6 options, show each one. Don't use a dropdown selector.</li>
+					        <li><a href="https://www.mockplus.com/blog/post/design-better-formscommon-mistakes-designers-make-and-how-to-fix-them">Read the article</a></li>
+				</ul>		
 	                        </details>
-					</fieldset>
-		 
-				<!--<legend>Phone numbers and sums of money</legend>
-				<div class="form-group">
-					<label for="tel1"><span class="field-name">Daytime Contact Number</span></label>
-					<p><a href="#right-panel-version" aria-controls="right-panel-version" class="overlay-lnk" role="button">Recommendation: don't bother with a placeholder or label</a></p>
-					<section id="right-panel-version" class="wb-overlay modal-content overlay-def wb-panel-r" style="max-width:60%;">	
-						<header class="modal-header">
-							<h2 class="modal-title">Don't ask for formatting for phone numbers</h2>
-						</header>
-						<div class="modal-body">
-							 <dl class="mrgn-bttm-lg">
-							 	<dt class="h3 mrgn-tp-md">Placeholders and labels do not guarantee that users will follow the correct format</dt>
-							 	<dd><ul id="sm list-unstyled">
-									<li>In January 2014, 13 desktop users entered a phone number into a field that had a label above it (999-999-9999). Only 7 followed instructions and entered hyphens in the phone number</li>
-									<li>In March 2014, 10 desktop users entered a phone number into a field that had a placeholder in it. Only 4 followed the instructions</li>
-									<li>Later in March, 10 desktop users tried a field with a placeholder and label. 8 used hyphens as instructed, but mobile participants still did not follow the suggested format</li>
-									</ul></dd>
-								 <dt class="h3 mrgn-tp-md">Use code that will accept any formatting or spacing instead</dt>
-								 <dd><ul id="sm list-unstyled">
-									 <li>In February 2016, 18 participants entered a phone number into a field without a placeholder or label. 3 used hyphens, similar to the number of participants that used hyphens in previous rounds. All participants entered the phone number without error messages.</li>
-									 <li>In April 2016, 11 blind participants entered a phone number into a field with neither a label or placeholder. 9 were able to complete it successfully without error messages</li></ul></dd>
-							</dl>
-						</div>
-						<div class="modal-body">
-        						<button class="btn btn-primary" type="button" onClick="$( '.wb-overlay' ).trigger( 'close.wb-overlay' );">Close</button>
-						</div>
-				</section>
-					<input class="form-control" id="tel1" name="tel1" type="tel" data-rule-phoneus="true" aria-describedby="tel1-desc">
-				</div>
-				<div class="form-group">
-					<label for="tel1"><span class="field-name">Enter a sum of money</span></label>
-					<details>
-				<summary>See details</summary>
-				<h4>Note</h4>
-				<p id="tel1-desc">Add delimiter placeholders for large sums</p>
-				<p>Javascript is required for a field with delimiters written in to it. Since we currently don't have that code, the field in this form is representative of how an input field asking for a sum of money would look.</p>
-						
-	</details>
-					
-					<input class="form-control" id="tel1" name="tel1" type="tel" data-rule-phoneus="true" aria-describedby="tel1-desc" placeholder="$___,___,___,">
-				</div>
-		<!-- REMOVED - DATA IS SOLID THAT THIS SHOULD NOT BE USED FOR DATES IN THE PAST	<div class="form-group">
-				<label for="bdate1"><span class="field-name">When were you born?</span> <span class="datepicker-format">(YYYY-MM-DD)</span></label>
-				<p id="bdate-desc">Use your real date of birth - just switch the month to one month higher or lower than your own.</p>
-				<input class="form-control" id="bdate1" name="bdate1" type="date" data-rule-dateiso="true" aria-describedby="bdate-desc">
-			</div>
-			</fieldset>
---> 
-				
-			<!--<fieldset class="form-group">
-				<legend>Mailing address</legend>
-				<div class="form-group">
-					<label for="st-address"><span class="field-name">Street address</span></label>
-					<input class="form-control" id="st-address" name="st-address" size="35" autocomplete="shipping street-address"/>
-				</div>
-				<div class="form-group">
-					<label for="frmCity"><span class="field-name">City</span></label>
-					<input class="form-control" id="frmCity" name="frmCity" autocomplete="shipping locality"/>
-				</div>
-				<div class="form-group">
-					<label for="frmProvince"><span class="field-name">Province</span></label>
-					<select class="form-control" id="frmProvince" name="frmProvince">
-						<option label="Select a Province"></option>
-						<option value="Alberta">Alberta</option>
-						<option value="British Columbia">British Columbia</option>
-						<option value="Manitoba">Manitoba</option>
-						<option value="New Brunswick">New Brunswick</option>
-						<option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
-						<option value="Northwest Territories">Northwest Territories</option>
-						<option value="Nova Scotia">Nova Scotia</option>
-						<option value="Nunavut">Nunavut</option>
-						<option value="Ontario">Ontario</option>
-						<option value="Prince Edward Island">Prince Edward Island</option>
-						<option value="Quebec">Quebec</option>
-						<option value="Saskatchewan">Saskatchewan</option>
-						<option value="Yukon">Yukon</option>
-					</select>
-				</div>
-				<div class="form-group">
-					<label for="pcodeca"><span class="field-name">Postal code</span></label>
-					<input class="form-control" id="pcodeca" name="pcodeca" type="text" size="7" maxlength="7"/>
-				</div>
-					<details>
-				<summary>Question help level: label</summary>
-				<p>Often all that is needed above an input field is a label. For simple things like mailing addresses, just a label is enough.</p>
-						
-	</details>
--->
-			  
+			</fieldset>  
 			<input type="button" onclick="submitForm('./index-en.html')" value="Previous" class="cancel btn btn-default" >
 			<input type="submit" value="Next" class="btn btn-primary" >
 		</form>
 	</div>
 	<dl id="wb-dtmd">
 		<dt>Date modified:</dt>
-		<dd><time property="dateModified">2015-01-28</time></dd>
+		<dd><time property="dateModified">2017-April-03</time></dd>
 	</dl>
 </main>
 <footer role="contentinfo" id="wb-info">
